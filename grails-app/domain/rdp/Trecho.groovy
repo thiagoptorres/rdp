@@ -21,6 +21,6 @@ class Trecho {
 	}
   
 	String toString() {
-		return origem + ' > ' + destino + ' - ' + data + ' - ' + turno
+		return tipo + ': ' + origem + ' > ' + destino + ' - ' + data.format("dd/MM/yyyy") + ' - ' + turno 
 	}
  }

@@ -88,6 +88,5 @@ grails.project.dependency.resolution = {
 		compile ":export:1.6"
 		//compile ":wkhtmltopdf:0.1.9"
 		compile ":rendering:1.0.0"
-		//compile ":rendering:0.4.5"
     }
 }

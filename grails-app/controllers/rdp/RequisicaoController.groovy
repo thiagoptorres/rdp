@@ -56,19 +56,9 @@ class RequisicaoController {
 	}
 	
 	def pdf(Requisicao requisicaoInstance){
-		
-		//def requisicao = Requisicao.get(params.id)
-		def requisicao = Requisicao.get("1")
-		
-		try{
-			renderPdf(template: "pdf", model: [requisicao: Requisicao.list()], filename: "file.pdf")
-		}
-		catch(e)
-		{
-			redirect action: "errorr"
-		}
-
-		
+		def requisicao = Requisicao.get(params.id)
+		//renderPdf(template: "pdf", model: [requisicao: Requisicao.list()], filename: "file.pdf")
+		renderPdf(template: "pdf", model: [requisicao: requisicao], filename: "file.pdf")
 	}
 	
 	def teste(){
