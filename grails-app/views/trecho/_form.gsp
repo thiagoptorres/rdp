@@ -4,7 +4,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: trechoInstance, field: 'requisicao', 'error')} required">
 	<label for="requisicao">
-		<g:message code="trecho.requisicao.label" default="Requisicao" />
+		<g:message code="trecho.requisicao.label" default="Requisição" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="requisicao" name="requisicao.id" from="${rdp.Requisicao.list()}" optionKey="id" required="" value="${trechoInstance?.requisicao?.id}" class="many-to-one"/>

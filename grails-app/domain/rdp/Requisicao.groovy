@@ -28,6 +28,7 @@ class Requisicao {
 	String custeio_tipo
 	String justificativa
 	String status
+	
   
 	static hasMany = [ trechos : Trecho ]
   

@@ -25,7 +25,7 @@
 			
 				<g:if test="${trechoInstance?.requisicao}">
 				<li class="fieldcontain">
-					<span id="requisicao-label" class="property-label"><g:message code="trecho.requisicao.label" default="Requisicao" /></span>
+					<span id="requisicao-label" class="property-label"><g:message code="trecho.requisicao.label" default="Requisição" /></span>
 					
 						<span class="property-value" aria-labelledby="requisicao-label"><g:link controller="requisicao" action="show" id="${trechoInstance?.requisicao?.id}">${trechoInstance?.requisicao?.encodeAsHTML()}</g:link></span>
 					

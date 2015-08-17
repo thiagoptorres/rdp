@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list requisicao">
 			
+				<g:if test="${requisicaoInstance?.id}">
+				<li class="fieldcontain">
+					<span id="matricula-label" class="property-label"><g:message code="requisicao.id.label" default="ID" /></span>
+					
+						<span class="property-value" aria-labelledby="id-label"><g:fieldValue bean="${requisicaoInstance}" field="id"/></span>
+					
+				</li>
+				</g:if>
+
 				<g:if test="${requisicaoInstance?.matricula}">
 				<li class="fieldcontain">
 					<span id="matricula-label" class="property-label"><g:message code="requisicao.matricula.label" default="Matricula" /></span>
@@ -34,7 +43,7 @@
 			
 				<g:if test="${requisicaoInstance?.beneficiario}">
 				<li class="fieldcontain">
-					<span id="beneficiario-label" class="property-label"><g:message code="requisicao.beneficiario.label" default="Beneficiario" /></span>
+					<span id="beneficiario-label" class="property-label"><g:message code="requisicao.beneficiario.label" default="Beneficiário" /></span>
 					
 						<span class="property-value" aria-labelledby="beneficiario-label"><g:fieldValue bean="${requisicaoInstance}" field="beneficiario"/></span>
 					
@@ -61,7 +70,7 @@
 			
 				<g:if test="${requisicaoInstance?.funcao}">
 				<li class="fieldcontain">
-					<span id="funcao-label" class="property-label"><g:message code="requisicao.funcao.label" default="Funcao" /></span>
+					<span id="funcao-label" class="property-label"><g:message code="requisicao.funcao.label" default="Função" /></span>
 					
 						<span class="property-value" aria-labelledby="funcao-label"><g:fieldValue bean="${requisicaoInstance}" field="funcao"/></span>
 					
@@ -70,7 +79,7 @@
 			
 				<g:if test="${requisicaoInstance?.cpf}">
 				<li class="fieldcontain">
-					<span id="cpf-label" class="property-label"><g:message code="requisicao.cpf.label" default="Cpf" /></span>
+					<span id="cpf-label" class="property-label"><g:message code="requisicao.cpf.label" default="CPF" /></span>
 					
 						<span class="property-value" aria-labelledby="cpf-label"><g:fieldValue bean="${requisicaoInstance}" field="cpf"/></span>
 					
@@ -79,7 +88,7 @@
 			
 				<g:if test="${requisicaoInstance?.rg}">
 				<li class="fieldcontain">
-					<span id="rg-label" class="property-label"><g:message code="requisicao.rg.label" default="Rg" /></span>
+					<span id="rg-label" class="property-label"><g:message code="requisicao.rg.label" default="RG" /></span>
 					
 						<span class="property-value" aria-labelledby="rg-label"><g:fieldValue bean="${requisicaoInstance}" field="rg"/></span>
 					
@@ -88,7 +97,7 @@
 			
 				<g:if test="${requisicaoInstance?.email}">
 				<li class="fieldcontain">
-					<span id="email-label" class="property-label"><g:message code="requisicao.email.label" default="Email" /></span>
+					<span id="email-label" class="property-label"><g:message code="requisicao.email.label" default="eMail" /></span>
 					
 						<span class="property-value" aria-labelledby="email-label"><g:fieldValue bean="${requisicaoInstance}" field="email"/></span>
 					
@@ -97,7 +106,7 @@
 			
 				<g:if test="${requisicaoInstance?.tel_fixo}">
 				<li class="fieldcontain">
-					<span id="tel_fixo-label" class="property-label"><g:message code="requisicao.tel_fixo.label" default="Telfixo" /></span>
+					<span id="tel_fixo-label" class="property-label"><g:message code="requisicao.tel_fixo.label" default="Tel Fixo" /></span>
 					
 						<span class="property-value" aria-labelledby="tel_fixo-label"><g:fieldValue bean="${requisicaoInstance}" field="tel_fixo"/></span>
 					
@@ -106,7 +115,7 @@
 			
 				<g:if test="${requisicaoInstance?.tel_celular}">
 				<li class="fieldcontain">
-					<span id="tel_celular-label" class="property-label"><g:message code="requisicao.tel_celular.label" default="Telcelular" /></span>
+					<span id="tel_celular-label" class="property-label"><g:message code="requisicao.tel_celular.label" default="Tel Celular" /></span>
 					
 						<span class="property-value" aria-labelledby="tel_celular-label"><g:fieldValue bean="${requisicaoInstance}" field="tel_celular"/></span>
 					
@@ -115,7 +124,7 @@
 			
 				<g:if test="${requisicaoInstance?.banco_nome}">
 				<li class="fieldcontain">
-					<span id="banco_nome-label" class="property-label"><g:message code="requisicao.banco_nome.label" default="Banconome" /></span>
+					<span id="banco_nome-label" class="property-label"><g:message code="requisicao.banco_nome.label" default="Nome do Banco" /></span>
 					
 						<span class="property-value" aria-labelledby="banco_nome-label"><g:fieldValue bean="${requisicaoInstance}" field="banco_nome"/></span>
 					
@@ -124,7 +133,7 @@
 			
 				<g:if test="${requisicaoInstance?.banco_numero}">
 				<li class="fieldcontain">
-					<span id="banco_numero-label" class="property-label"><g:message code="requisicao.banco_numero.label" default="Banconumero" /></span>
+					<span id="banco_numero-label" class="property-label"><g:message code="requisicao.banco_numero.label" default="Número do Banco" /></span>
 					
 						<span class="property-value" aria-labelledby="banco_numero-label"><g:fieldValue bean="${requisicaoInstance}" field="banco_numero"/></span>
 					
@@ -133,7 +142,7 @@
 			
 				<g:if test="${requisicaoInstance?.banco_agencia}">
 				<li class="fieldcontain">
-					<span id="banco_agencia-label" class="property-label"><g:message code="requisicao.banco_agencia.label" default="Bancoagencia" /></span>
+					<span id="banco_agencia-label" class="property-label"><g:message code="requisicao.banco_agencia.label" default="Número da Agência" /></span>
 					
 						<span class="property-value" aria-labelledby="banco_agencia-label"><g:fieldValue bean="${requisicaoInstance}" field="banco_agencia"/></span>
 					
@@ -142,7 +151,7 @@
 			
 				<g:if test="${requisicaoInstance?.banco_conta}">
 				<li class="fieldcontain">
-					<span id="banco_conta-label" class="property-label"><g:message code="requisicao.banco_conta.label" default="Bancoconta" /></span>
+					<span id="banco_conta-label" class="property-label"><g:message code="requisicao.banco_conta.label" default="Número da Conta" /></span>
 					
 						<span class="property-value" aria-labelledby="banco_conta-label"><g:fieldValue bean="${requisicaoInstance}" field="banco_conta"/></span>
 					
@@ -151,7 +160,7 @@
 			
 				<g:if test="${requisicaoInstance?.viagem_objetivo}">
 				<li class="fieldcontain">
-					<span id="viagem_objetivo-label" class="property-label"><g:message code="requisicao.viagem_objetivo.label" default="Viagemobjetivo" /></span>
+					<span id="viagem_objetivo-label" class="property-label"><g:message code="requisicao.viagem_objetivo.label" default="Objetivo da Viagem" /></span>
 					
 						<span class="property-value" aria-labelledby="viagem_objetivo-label"><g:fieldValue bean="${requisicaoInstance}" field="viagem_objetivo"/></span>
 					
@@ -160,7 +169,7 @@
 			
 				<g:if test="${requisicaoInstance?.afastamento_data_inicio}">
 				<li class="fieldcontain">
-					<span id="afastamento_data_inicio-label" class="property-label"><g:message code="requisicao.afastamento_data_inicio.label" default="Afastamentodatainicio" /></span>
+					<span id="afastamento_data_inicio-label" class="property-label"><g:message code="requisicao.afastamento_data_inicio.label" default="Afastamento Data Inicio" /></span>
 					
 						<span class="property-value" aria-labelledby="afastamento_data_inicio-label"><g:formatDate date="${requisicaoInstance?.afastamento_data_inicio}" /></span>
 					
@@ -169,7 +178,7 @@
 			
 				<g:if test="${requisicaoInstance?.afastamento_data_termino}">
 				<li class="fieldcontain">
-					<span id="afastamento_data_termino-label" class="property-label"><g:message code="requisicao.afastamento_data_termino.label" default="Afastamentodatatermino" /></span>
+					<span id="afastamento_data_termino-label" class="property-label"><g:message code="requisicao.afastamento_data_termino.label" default="Afastamento Data Termino" /></span>
 					
 						<span class="property-value" aria-labelledby="afastamento_data_termino-label"><g:formatDate date="${requisicaoInstance?.afastamento_data_termino}" /></span>
 					
@@ -178,7 +187,7 @@
 			
 				<g:if test="${requisicaoInstance?.trabalho_data_inicio}">
 				<li class="fieldcontain">
-					<span id="trabalho_data_inicio-label" class="property-label"><g:message code="requisicao.trabalho_data_inicio.label" default="Trabalhodatainicio" /></span>
+					<span id="trabalho_data_inicio-label" class="property-label"><g:message code="requisicao.trabalho_data_inicio.label" default="Trabalho Data Inicio" /></span>
 					
 						<span class="property-value" aria-labelledby="trabalho_data_inicio-label"><g:formatDate date="${requisicaoInstance?.trabalho_data_inicio}" /></span>
 					
@@ -187,7 +196,7 @@
 			
 				<g:if test="${requisicaoInstance?.trabalho_hora_inicio}">
 				<li class="fieldcontain">
-					<span id="trabalho_hora_inicio-label" class="property-label"><g:message code="requisicao.trabalho_hora_inicio.label" default="Trabalhohorainicio" /></span>
+					<span id="trabalho_hora_inicio-label" class="property-label"><g:message code="requisicao.trabalho_hora_inicio.label" default="Trabalho Hora Inicio" /></span>
 					
 						<span class="property-value" aria-labelledby="trabalho_hora_inicio-label"><g:fieldValue bean="${requisicaoInstance}" field="trabalho_hora_inicio"/></span>
 					
@@ -196,7 +205,7 @@
 			
 				<g:if test="${requisicaoInstance?.trabalho_data_termino}">
 				<li class="fieldcontain">
-					<span id="trabalho_data_termino-label" class="property-label"><g:message code="requisicao.trabalho_data_termino.label" default="Trabalhodatatermino" /></span>
+					<span id="trabalho_data_termino-label" class="property-label"><g:message code="requisicao.trabalho_data_termino.label" default="Trabalho Data Término" /></span>
 					
 						<span class="property-value" aria-labelledby="trabalho_data_termino-label"><g:formatDate date="${requisicaoInstance?.trabalho_data_termino}" /></span>
 					
@@ -205,7 +214,7 @@
 			
 				<g:if test="${requisicaoInstance?.trabalho_hora_termino}">
 				<li class="fieldcontain">
-					<span id="trabalho_hora_termino-label" class="property-label"><g:message code="requisicao.trabalho_hora_termino.label" default="Trabalhohoratermino" /></span>
+					<span id="trabalho_hora_termino-label" class="property-label"><g:message code="requisicao.trabalho_hora_termino.label" default="Trabalho Hora Término" /></span>
 					
 						<span class="property-value" aria-labelledby="trabalho_hora_termino-label"><g:fieldValue bean="${requisicaoInstance}" field="trabalho_hora_termino"/></span>
 					
@@ -214,7 +223,7 @@
 			
 				<g:if test="${requisicaoInstance?.deslocamento_tipo}">
 				<li class="fieldcontain">
-					<span id="deslocamento_tipo-label" class="property-label"><g:message code="requisicao.deslocamento_tipo.label" default="Deslocamentotipo" /></span>
+					<span id="deslocamento_tipo-label" class="property-label"><g:message code="requisicao.deslocamento_tipo.label" default="Tipo de Deslocamento" /></span>
 					
 						<span class="property-value" aria-labelledby="deslocamento_tipo-label"><g:fieldValue bean="${requisicaoInstance}" field="deslocamento_tipo"/></span>
 					
@@ -223,7 +232,7 @@
 			
 				<g:if test="${requisicaoInstance?.custeio_tipo}">
 				<li class="fieldcontain">
-					<span id="custeio_tipo-label" class="property-label"><g:message code="requisicao.custeio_tipo.label" default="Custeiotipo" /></span>
+					<span id="custeio_tipo-label" class="property-label"><g:message code="requisicao.custeio_tipo.label" default="Tipo de Custeio" /></span>
 					
 						<span class="property-value" aria-labelledby="custeio_tipo-label"><g:fieldValue bean="${requisicaoInstance}" field="custeio_tipo"/></span>
 					

@@ -24,7 +24,7 @@
 			<thead>
 					<tr>
 					
-						<th><g:message code="trecho.requisicao.label" default="Requisicao" /></th>
+						<th><g:message code="trecho.requisicao.label" default="Requisição" /></th>
 					
 						<g:sortableColumn property="tipo" title="${message(code: 'trecho.tipo.label', default: 'Tipo')}" />
 					

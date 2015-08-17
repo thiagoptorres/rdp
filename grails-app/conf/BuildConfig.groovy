@@ -59,6 +59,9 @@ grails.project.dependency.resolution = {
 		runtime 'mysql:mysql-connector-java:5.1.29'
 		compile 'commons-beanutils:commons-beanutils:1.8.3'
 		//runtime "org.odftoolkit:odfdom-java:0.8.5"
+		runtime 'org.springframework:spring-test:3.1.0.RELEASE'
+		compile 'org.xhtmlrenderer:core-renderer:R8'
+		compile 'com.lowagie:itext:2.0.8'
     }
 
     plugins {
@@ -84,6 +87,7 @@ grails.project.dependency.resolution = {
 		// Plugins rdp2
 		compile ":export:1.6"
 		//compile ":wkhtmltopdf:0.1.9"
-
+		compile ":rendering:1.0.0"
+		//compile ":rendering:0.4.5"
     }
 }
